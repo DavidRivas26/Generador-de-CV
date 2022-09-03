@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de CV</title>
+    <link rel="stylesheet" href="assets/bootstap/bootstrap.min.css">
+</head>
+<body>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="card col-6">
+                <div class="card-header bg-transparent">
+                    <h4 class="text-center">Genere su CV</h4>
+                </div>
+                <div class="card-body ">
+                    <div class="card-title">
+                        <h4 class="text-center">Intoduzca sus datos</h4>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Direccion:</label>
+                        <input type="text" class="form-control" id="direccion">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="correo">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono:</label>
+                        <input type="text" class="form-control" id="telefono">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="paginaWeb" class="form-label">Pagina web:</label>
+                        <input type="text" class="form-control" id="paginaWeb">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="resumen" class="form-label">Resumen:</label>
+                        <textarea class="form-control" id="resumen" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idiomas" class="form-label">Idiomas:</label>
+                        <input type="text" class="form-control" id="idiomas">
+                        <div id="comentarioIdiomas" class="form-text text-dark">En caso de ser mas de uno, separados por coma.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="empleos" class="form-label">Empleos:</label>
+                        <input type="text" class="form-control" id="empleos">
+                        <div id="comentarioEmpleos" class="form-text text-dark">En caso de ser mas de uno, separados por coma.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="educacion" class="form-label">Educacion:</label>
+                        <input type="text" class="form-control" id="educacion">
+                        <div id="comentarioEducacion" class="form-text text-dark">En caso de ser mas de uno, separados por coma.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="habilidades" class="form-label">Habilidades:</label>
+                        <input type="text" class="form-control" id="habilidades">
+                        <div id="comentarioHabilidades" class="form-text text-dark">En caso de ser mas de uno, separados por coma.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="certificaciones" class="form-label">Certificaciones:</label>
+                        <input type="text" class="form-control" id="certificaciones">
+                        <div id="comentariocertificaciones" class="form-text text-dark">En caso de ser mas de uno, separados por coma.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <button onclick="CreateCV()" type="button" class="btn btn-outline-dark">Crear</button>
+                        <button onclick="Clear()" type="button" class="btn btn-outline-dark">Limpiar</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container mt-3" id="cv-container">
+    <!--  <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 class="card-title">Nombre</h3><br><br><br>
+                                <h5 class="card-title">Contacto</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Direccion: xd</li>
+                                    <li class="list-group-item">Telefono: xd</li>
+                                    <li class="list-group-item">Email: xd</li>
+                                </ul><br>
+                                <h5 class="card-title">Idiomas</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Idiomas: xd</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="card-title">Resumen</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">xd</li>
+                                </ul><br>
+                                <h5 class="card-title">Habilidades</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Habilidades: xd</li>
+                                </ul><br>
+                                <h5 class="card-title">Experiencia</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Experiencia: xd</li>
+                                </ul><br>
+                                <h5 class="card-title">Educacion</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Educacion: xd</li>
+                                </ul><br>
+                                <h5 class="card-title">Certificaciones</h5><hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Certificaciones: xd</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  -->
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
